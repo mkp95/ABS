@@ -16,7 +16,7 @@
       "content-scripts/main.js"
     ]
   }, {
-    "matches": ["https://account.microsoft.com/rewards/*"],
+    "matches": ["https://rewards.microsoft.com/*"],
     "js": [
       "constants.js",
       "content-scripts/script-injector.js",
@@ -40,7 +40,6 @@
     ],
     "persistent": true
   },
-  "incognito": "split",
   "content_security_policy": "script-src 'self' https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js; object-src 'self'",
   "browser_action": {
     "default_popup": "popup.html"
@@ -65,8 +64,8 @@
   ],
   "permissions": [
     "https://*.bing.com/*",
-    "https://account.microsoft.com/rewards/*",
     "https://trends.google.com/*",
+	"https://*.microsoft.com/*",
     "webRequest",
     "webRequestBlocking",
     "tabs",
