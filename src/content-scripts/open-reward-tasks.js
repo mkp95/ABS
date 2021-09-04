@@ -20,7 +20,7 @@ function clickAll(selector, parent = document) {
     if (cards.length) {
       cards.forEach(card => {
         if (card.querySelector('.mee-icon-AddMedium')) {
-          clickAll('a.c-call-to-action', card);
+          clickAll('a.ds-card-sec', card);
         }
       });
     }
