@@ -1,7 +1,7 @@
 # ABS
 Chrome Extension and Firefox Addon to automatically perform a number of daily searches and collect bonus reward points.
 
-New version 1.2.31.2 4/9/21
+New version 1.2.31.5 2/12/22
 
 ![](/screenshots/popup.png)
 
@@ -14,6 +14,8 @@ NOTE 08/03/22 :- Delay now changed to 3 minutes instead of 1 to allow more time 
 NOTE 07/03/22 :- Rewards tasks will now run 60 seconds after searches start because searches were taking over all open tabs and not completing some of the rewards tasks, mainly the 30 pointer ones! If 60 seconds isn't long enough for you then just change the 60000 on line 16 of the file called open-rewards-tasks.js which you can find in the src/content-scripts folder, just add an extra 1000 to the 60000 for each second you need to add to the initial 60 seconds delay.
 
 NOTE 12/11/21 :- If any issues regarding Rewards tabs not opening but searches work still then first try uninstalling the add-on and re-installing it again before opening a ticket. I do maintain it when and as needed and use it daily myself so am usually aware of any issue that breaks it and will be looking to get it working again ASAP. Thanks
+
+NOTE 2/12/22 :- Updated rewards URL so that rewards start working again.
 
 <a href="https://www.buymeacoffee.com/h4x0rm1k3" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
