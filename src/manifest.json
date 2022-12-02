@@ -1,7 +1,7 @@
 {
   "name": "ABS",
   "description": "Automatically perform daily searches and collect bonus reward points.",
-  "version": "1.2.31.4",
+  "version": "1.2.31.5",
   "manifest_version": 2,
   "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
   "content_scripts": [{
@@ -16,7 +16,7 @@
       "content-scripts/main.js"
     ]
   }, {
-    "matches": ["https://rewards.microsoft.com/?redref=amc"],
+    "matches": ["https://rewards.bing.com/?redref=amc"],
     "js": [
       "constants.js",
       "content-scripts/script-injector.js",
@@ -65,8 +65,8 @@
   "permissions": [
     "https://*.bing.com/*",
     "https://trends.google.com/*",
-	"https://rewards.microsoft.com/*",
-	"https://rewards.microsoft.com/",
+	"https://rewards.bing.com/*",
+	"https://rewards.bing.com/",
     "webRequest",
     "webRequestBlocking",
     "tabs",
