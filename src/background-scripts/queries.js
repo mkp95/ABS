@@ -45,7 +45,7 @@ async function fetchDailyTrendQueries() {
         let date = new Date(Date.now() - i * constants.ONE_DAY_MILLIS);
         date = date.toISOString();
         date = date.substring(0, date.indexOf('T')).replace(/-/g, '');
-        return fetch(`${constants.DAILY_TRENDS_API}&ed=${date}`)
+        return fetch(`${constants.DAILY_TRENDS_API}${prefs.searchWithDailyTrendsLocale}&ed=${date}`)
           .then(r => {
             if (!r.ok) throw new Error('Fetching daily queries failed');
             return r.text();
